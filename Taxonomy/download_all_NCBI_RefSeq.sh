@@ -2,8 +2,8 @@
 # Aim: downloaod all COMPLETE bacteria genome/protein sequences from the NCBI database
 # Input: none
 # Output: a folder named NCBI_database at your current workdir 
-# Note: This step would take ~10 hours and ~40GB storage with one thread.
-# Programmer: Shaopeng Liu sml6467@psu.edu
+# Note: this script would take ~10 hours and ~40GB storage with one thread.
+# Programmer: Shaopeng Liu, sml6467@psu.edu
 ######
 
 
