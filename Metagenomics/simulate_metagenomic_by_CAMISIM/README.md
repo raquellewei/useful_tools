@@ -10,7 +10,7 @@ reference:
 ### Caveats in usage
 ---
 1. Input genome files must be fa file, can't be gzipped
-2. Run the cmd in the CAMISIM github folder (just follow the examples they give). In the design file for de novo running, the path for ENVs are relative path. Namely, you have to edit the path if you don't run the py code in the original folder. Similarly, you can't use full path inside the file because the python will paste the path together.
+2. Run the cmd in the CAMISIM github folder (just follow the examples they give). In the design file for de novo running, the paths for ENVs are relative paths. Namely, you have to edit the path if you don't run the py code in the original folder. Similarly, you can't use full path inside the file because the python will paste the path together.
 3. Input taxid is the species ID, otherwise you'll get an error.
 4. Some new id may not in the older version of taxdump file, we can download the new and re-organise into a folder called "NCBI" (untar and then retar), see [issue 81](https://github.com/CAMI-challenge/CAMISIM/issues/81) for my description
 5. CAMISIM can only be used under py27 environment
@@ -18,9 +18,13 @@ reference:
 ### How to run simulation
 ---
 1. Create an conda environment with py27
-2. Modify the [mini_config.ini](https://github.com/CAMI-challenge/CAMISIM/wiki/Configuration-File-Options) file (this is how CAMISIM take input parameters) by shadowing the structure of [input files](https://github.com/CAMI-challenge/CAMISIM/wiki/File-Formats)
+2. Modify the [mini_config.ini](https://github.com/CAMI-challenge/CAMISIM/wiki/Configuration-File-Options) file (this is how CAMISIM take input parameters) by shadowing the structure of [input files](https://github.com/CAMI-challenge/CAMISIM/wiki/File-Formats) For explanation on configuration file options, refer to defaults/default_config.ini (or the manual, of course) 
 3. Put your input files into the CAMISIM folder, and then run the py code inside the main folder
 
+### Input file requirements
+---
+1. id_to_genome_file. example: defaults/genome_to_id.tsv
+2. metadata. example: defaults/metadata.tsv
 
 ### Simulation types
 ---
